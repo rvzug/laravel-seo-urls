@@ -1,0 +1,38 @@
+{
+    "name": "rvzug/laravel-seo-urls",
+    "description": "Provides functionallity for automatic creating SEO-urls and redirects when models are saved",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rvzug\\LaravelSeoUrls\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rudi van Zandwijk",
+            "email": "rudivanzandwijk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "laravel/pint": "^1.15",
+        "pestphp/pest": "^2.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rvzug\\LaravelSeoUrls\\Providers\\SeoUrlServiceProvider"
+            ]
+        }
+    }
+}
